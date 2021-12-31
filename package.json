@@ -1,7 +1,7 @@
 {
   "name": "p3_xavier_hernandez",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project 3 OC - Parcours Front-End - ohMyFood",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/XavHernandez/XavierHernandez_3_31122021.git"
   },
-  "author": "",
+  "author": "_Xav",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/XavHernandez/XavierHernandez_3_31122021/issues"
