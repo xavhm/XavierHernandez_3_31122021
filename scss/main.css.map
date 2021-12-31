@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EDDL,OAAO;CCEnB",
+    "sources": [
+        "main.scss",
+        "base/_variables.scss",
+        "pages/_accueil.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
