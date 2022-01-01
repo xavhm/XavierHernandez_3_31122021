@@ -1,2 +1,5 @@
-@import "base/variables";
+@import "base/styles";
+@import "utils/variables";
+@import "utils/mixins";
 @import "pages/accueil";
+@import "pages/menu";
