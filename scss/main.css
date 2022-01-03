@@ -200,14 +200,154 @@ body {
 }
 
 .figure-menu {
+  width: 100vw;
+  background-color: #e9e5e5;
   position: relative;
   z-index: -1;
-  width: 100vw;
-  max-height: 300px;
+  height: 250px;
 }
 
 .figure-menu img {
+  max-height: 300px;
   width: 100%;
+}
+
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #e9e5e5;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 1.5rem 1.5rem;
+}
+
+.menu__header h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8rem;
+}
+
+.menu__header i {
+  font-size: 1.5rem;
+  margin-left: 4.5rem;
+}
+
+.menu__section {
+  background-color: #e9e5e5;
+  padding: 1rem 1.5rem;
+}
+
+.menu__section h2 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.menu__section__line {
+  width: 50px;
+  height: 5px;
+  background-color: #99e2d0;
+  margin-top: 5px;
+}
+
+.menu__section__plate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  background-color: white;
+  border-radius: 16px;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 7px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 7px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  overflow: hidden;
+}
+
+.menu__section__plate__details {
+  text-overflow: ellipsis;
+}
+
+.menu__section__plate__details p {
+  margin-top: 5px;
+}
+
+.menu__section__plate__info {
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.menu__section__plate__validation {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99e2d0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 90%;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.menu__section__plate__validation i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.menu__validation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e9e5e5;
+  padding: 1.5rem 1rem;
+}
+
+.menu__validation button {
+  border: none;
+  background: linear-gradient(170deg, #ff79da 10%, #9356dc);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  border-radius: 24px;
+  margin-bottom: 1.5rem;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.menu__validation button:hover {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 20px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 20px 16px -8px;
 }
 
 header {

@@ -1,9 +1,100 @@
 .figure-menu {
+  width: 100vw;
+  background-color: $darkgrey;
   position: relative;
   z-index: -1;
-  width: 100vw;
-  max-height: 300px;
+  height: 250px;
   img {
+    max-height: 300px;
     width: 100%;
+  }
+}
+
+.menu {
+  &__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: $darkgrey;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 1.5rem 1.5rem;
+    h1 {
+      @include title-font;
+      font-size: 1.8rem;
+    }
+    i {
+      font-size: 1.5rem;
+      margin-left: 4.5rem;
+    }
+  }
+  &__section {
+    background-color: $darkgrey;
+    padding: 1rem 1.5rem;
+    h2 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+    &__line {
+      width: 50px;
+      height: 5px;
+      background-color: $tertiary;
+      margin-top: 5px;
+    }
+    &__plate {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      position: relative;
+      background-color: white;
+      border-radius: 16px;
+      padding: 0.8rem 1rem;
+      margin: 1rem 0;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 7px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      overflow: hidden;
+      &__details {
+        text-overflow: ellipsis;
+        p {
+          margin-top: 5px;
+        }
+      }
+      &__info {
+        text-overflow: ellipsis;
+        font-weight: bold;
+      }
+      &__validation {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiary;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 90%;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        i {
+          font-size: 1.5rem;
+          color: white;
+        }
+      }
+    }
+  }
+  &__validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $darkgrey;
+    padding: 1.5rem 1rem;
+    button {
+      @include pink-button;
+      padding: 1rem 3rem;
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+      font-size: 1rem;
+    }
   }
 }
