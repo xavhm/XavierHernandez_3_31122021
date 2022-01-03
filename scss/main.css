@@ -199,6 +199,17 @@ body {
   font-size: 1.5rem;
 }
 
+.figure-menu {
+  position: relative;
+  z-index: -1;
+  width: 100vw;
+  max-height: 300px;
+}
+
+.figure-menu img {
+  width: 100%;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
@@ -206,6 +217,39 @@ header {
   text-align: center;
   padding-top: 5px;
   background-color: white;
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.header-menu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.header-menu a i {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 20px;
+}
+
+.header-menu a:hover {
+  color: #9356dc;
 }
 
 footer {
