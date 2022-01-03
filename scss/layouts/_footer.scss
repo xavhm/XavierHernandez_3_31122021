@@ -7,6 +7,10 @@ footer {
     @include title-font;
     margin-bottom: 20px;
   }
+  a {
+    text-decoration: none;
+    color: white;
+  }
   p {
     margin-bottom: 10px;
   }
