@@ -275,6 +275,7 @@ body {
 }
 
 .menu__section__plate__details {
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
@@ -283,12 +284,12 @@ body {
 }
 
 .menu__section__plate__info {
+  white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: bold;
 }
 
 .menu__section__plate__validation {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,12 +300,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #99e2d0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  left: 90%;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .menu__section__plate__validation i {

@@ -28,6 +28,7 @@
       margin-left: 4.5rem;
     }
   }
+
   &__section {
     background-color: $darkgrey;
     padding: 1rem 1.5rem;
@@ -55,27 +56,25 @@
         rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
       overflow: hidden;
       &__details {
+        white-space: nowrap;
         text-overflow: ellipsis;
         p {
           margin-top: 5px;
         }
       }
       &__info {
+        white-space: nowrap;
         text-overflow: ellipsis;
         font-weight: bold;
       }
       &__validation {
-        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $tertiary;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        left: 90%;
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px;
+        transform: translateX(10px);
         i {
           font-size: 1.5rem;
           color: white;
@@ -83,6 +82,7 @@
       }
     }
   }
+
   &__validation {
     display: flex;
     justify-content: center;
