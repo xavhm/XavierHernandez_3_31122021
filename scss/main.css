@@ -10,8 +10,10 @@
   scroll-behavior: smooth;
 }
 
+html,
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .localisation {
