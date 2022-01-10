@@ -564,43 +564,53 @@ body {
 }
 
 .delay-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  -webkit-animation-delay: 0.09091s;
+          animation-delay: 0.09091s;
 }
 
 .delay-2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.18182s;
+          animation-delay: 0.18182s;
 }
 
 .delay-3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 0.27273s;
+          animation-delay: 0.27273s;
 }
 
 .delay-4 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 0.36364s;
+          animation-delay: 0.36364s;
 }
 
 .delay-5 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.45455s;
+          animation-delay: 0.45455s;
 }
 
 .delay-6 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 0.54545s;
+          animation-delay: 0.54545s;
 }
 
 .delay-7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-animation-delay: 0.63636s;
+          animation-delay: 0.63636s;
 }
 
 .delay-8 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 0.72727s;
+          animation-delay: 0.72727s;
+}
+
+.delay-9 {
+  -webkit-animation-delay: 0.81818s;
+          animation-delay: 0.81818s;
+}
+
+.delay-10 {
+  -webkit-animation-delay: 0.90909s;
+          animation-delay: 0.90909s;
 }
 
 .loader__container {

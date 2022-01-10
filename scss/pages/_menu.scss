@@ -142,8 +142,8 @@
   }
 }
 
-@for $i from 0 to 9 {
+@for $i from 0 to 11 {
   .delay-#{$i} {
-    animation-delay: #{$i/10}s;
+    animation-delay: #{$i/11}s;
   }
 }
