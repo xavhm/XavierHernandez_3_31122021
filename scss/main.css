@@ -435,9 +435,12 @@ body {
 .menu__section__plate__details h3 {
   text-overflow: ellipsis;
   overflow: hidden;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 .menu__section__plate__details p {
+  font-size: 1rem;
   margin-top: 5px;
   text-overflow: ellipsis;
   overflow: hidden;
