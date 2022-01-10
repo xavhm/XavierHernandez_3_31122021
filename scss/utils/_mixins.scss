@@ -7,6 +7,7 @@
 }
 
 @mixin pink-button {
+  position: relative;
   border: none;
   background-image: linear-gradient(170deg, $secondary 20%, $primary);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -20,8 +21,9 @@
   opacity: 1;
   transition: all 0.5s ease-in;
   cursor: pointer;
+
   &:hover {
-    opacity: 0.9;
+    opacity: 0.8;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 20px 16px -8px;
   }

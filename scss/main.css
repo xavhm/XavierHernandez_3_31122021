@@ -56,6 +56,7 @@ body {
 }
 
 .hero__button {
+  position: relative;
   border: none;
   background-image: linear-gradient(170deg, #ff79da 20%, #9356dc);
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -73,7 +74,7 @@ body {
 }
 
 .hero__button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 20px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 20px 16px -8px;
 }
@@ -249,6 +250,10 @@ body {
 }
 
 .figure-menu img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   max-height: 300px;
   width: 100%;
 }
@@ -330,16 +335,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  max-width: 400px;
   background-color: white;
   border-radius: 16px;
-  padding: 0.8rem 1rem;
   margin: 1rem 0;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 7px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 7px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -347,40 +352,76 @@ body {
 }
 
 .menu__section__plate__details {
+  padding: 0.8rem 1rem;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu__section__plate__details h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu__section__plate__details p {
   margin-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu__section__plate__info {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-weight: bold;
-}
-
-.menu__section__plate__validation {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 1rem;
+  margin-right: -2rem;
+  padding-top: 1.8rem;
+  font-weight: bold;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.menu__section__plate__validation {
+  padding: 1.5rem 1rem 1.5rem 1rem;
   background-color: #99e2d0;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
 }
 
-.menu__section__plate__validation i {
+.menu__section__plate__validation .fas {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
   font-size: 1.5rem;
   color: white;
+}
+
+.menu__section__plate:hover .menu__section__plate__info {
+  margin-right: 1rem;
+}
+
+.menu__section__plate:hover .menu__section__plate__validation {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.menu__section__plate:hover .menu__section__plate__validation .fas {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .menu__validation {
@@ -398,6 +439,7 @@ body {
 }
 
 .menu__validation button {
+  position: relative;
   border: none;
   background-image: linear-gradient(170deg, #ff79da 20%, #9356dc);
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -419,7 +461,7 @@ body {
 }
 
 .menu__validation button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 20px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 27px -5px, rgba(0, 0, 0, 0.3) 0px 20px 16px -8px;
 }

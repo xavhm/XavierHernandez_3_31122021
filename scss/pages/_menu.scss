@@ -5,6 +5,8 @@
   z-index: -1;
   height: 250px;
   img {
+    object-fit: cover;
+    object-position: center;
     max-height: 300px;
     width: 100%;
   }
@@ -46,39 +48,65 @@
     }
     &__plate {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: space-between;
       position: relative;
+      max-width: 400px;
       background-color: white;
       border-radius: 16px;
-      padding: 0.8rem 1rem;
       margin: 1rem 0;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 7px -5px,
         rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
       overflow: hidden;
       &__details {
+        padding: 0.8rem 1rem;
         white-space: nowrap;
         text-overflow: ellipsis;
+        overflow: hidden;
+        h3 {
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
         p {
           margin-top: 5px;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
       }
       &__info {
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: 1rem;
+        margin-right: -2rem;
+        padding-top: 1.8rem;
         font-weight: bold;
+        transition: all 0.4s ease-out;
       }
       &__validation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 1.5rem 1rem 1.5rem 1rem;
         background-color: $tertiary;
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px;
-        transform: translateX(10px);
-        i {
+        transition: all 0.4s ease-out;
+        transform: translateX(60px);
+        .fas {
+          transform: rotate(360deg);
+          transition: all 0.4s ease-out;
           font-size: 1.5rem;
           color: white;
+        }
+      }
+
+      &:hover &__info {
+        margin-right: 1rem;
+      }
+
+      &:hover &__validation {
+        transform: translateX(0px);
+        .fas {
+          transform: rotate(0deg);
         }
       }
     }
