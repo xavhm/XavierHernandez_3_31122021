@@ -617,7 +617,8 @@ body {
 }
 
 .loader__container {
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
