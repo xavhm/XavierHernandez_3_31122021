@@ -52,6 +52,4 @@ Troisième projet du parcours "Développeur Front-End" chez OpenClassroom. L'obj
 
 ## Tester le projet
 
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [ohmyfood.mathisbarre.com](https://ohmyfood.mathisbarre.com/)
-
-```
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [Hosted on Github-Pages](https://xavhernandez.github.io/XavierHernandez_3_31122021/)
